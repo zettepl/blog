@@ -1,11 +1,6 @@
 %p#notice= notice
 
-%p
-  %b Title:
-  = @post.title
-%p
-  %b Body:
-  = @post.body
+= render :partial => @post
 
 = link_to 'Edit', edit_post_path(@post)
 \|

@@ -6,9 +6,21 @@
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   %body
+    .navbar.navbar-inverse
+      .container
+        .navbar-header
+          %a.navbar-brand Blog
+        #navbar
+          %ul.nav.navbar-nav
+            %li
+              %a glowna
+            %li
+              %a gowno
     .container
       .row
         .col-md-8
           = yield
         .col-md-4
+          .well
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque erat vel mauris malesuada, viverra egestas turpis posuere. Vivamus interdum sem et lacinia rutrum. Donec vel tellus orci. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam quis sem ex. Nullam tincidunt varius dui id tincidunt. Vestibulum ut urna vel leo hendrerit viverra. Nulla sed metus mollis, sodales mi nec, efficitur arcu. Vivamus turpis dolor, auctor at libero sit amet, lobortis dignissim libero. Quisque et risus sit amet nunc euismod porttitor. Maecenas volutpat hendrerit neque non euismod. Nam eu malesuada urna. In hac habitasse platea dictumst. 
           
