@@ -1,11 +1,11 @@
 !!!
 %html
   %head
+    %meta{:content => "width=device-width, initial-scale=1, maximum-scale=1", :name => "viewport"}
     %title Blog
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
-    %meta{:content => "width=device-width, initial-scale=1, maximum-scale=1", :name => "viewport"}
   %body
     %nav.navbar.navbar-static-top.navbar-inverse{:role => "navigation"}
       .container
@@ -34,17 +34,18 @@
               %li= link_to "Sign up", new_user_registration_path
               %li
                 \#{link_to "Login", new_user_session_path}
-    .container
-      %p.notice= notice
-      %p.alert= alert
-      .row
-        .col-xs-12.col-md-8
-          = yield
-        .col-xs-12.col-md-4
-          .panel.panel-default
-            .panel-heading
-              %h3.panel-title Lorem ipsum
-            .panel-body
-              Essa
-          .well
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque erat vel mauris malesuada, viverra egestas turpis posuere. Vivamus interdum sem et lacinia rutrum. Donec vel tellus orci. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam quis sem ex. Nullam tincidunt varius dui id tincidunt. Vestibulum ut urna vel leo hendrerit viverra. Nulla sed metus mollis, sodales mi nec, efficitur arcu. Vivamus turpis dolor, auctor at libero sit amet, lobortis dignissim libero. Quisque et risus sit amet nunc euismod porttitor. Maecenas volutpat hendrerit neque non euismod. Nam eu malesuada urna. In hac habitasse platea dictumst.
+    %main{ role: 'main', class: controller.controller_name }
+      .container
+        .row
+          %p.notice= notice
+          %p.alert= alert
+          .col-xs-12.col-md-8
+            = yield
+          .col-xs-12.col-md-4
+            .panel.panel-default
+              .panel-heading
+                %h3.panel-title Lorem ipsum
+              .panel-body
+                Essa
+            .well
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque erat vel mauris malesuada, viverra egestas turpis posuere. Vivamus interdum sem et lacinia rutrum. Donec vel tellus orci. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam quis sem ex. Nullam tincidunt varius dui id tincidunt. Vestibulum ut urna vel leo hendrerit viverra. Nulla sed metus mollis, sodales mi nec, efficitur arcu. Vivamus turpis dolor, auctor at libero sit amet, lobortis dignissim libero. Quisque et risus sit amet nunc euismod porttitor. Maecenas volutpat hendrerit neque non euismod. Nam eu malesuada urna. In hac habitasse platea dictumst.
