@@ -3,13 +3,11 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.1.5'
 
-
-
 gem 'sqlite3'
-
 
 gem 'bootstrap-sass'
 gem 'coffee-rails'
+gem 'devise'
 gem 'haml-rails'
 gem 'jquery-rails'
 gem 'sass-rails', '~> 4.0.3'
@@ -26,9 +24,9 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 
 group :development do
-	gem 'better_errors'
-	gem 'html2haml'
-	gem 'spring'
+  gem 'better_errors'
+  gem 'html2haml'
+  gem 'spring'
 end
 
 # Use ActiveModel has_secure_password

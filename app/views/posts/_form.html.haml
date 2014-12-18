@@ -6,6 +6,8 @@
         - @post.errors.full_messages.each do |msg|
           %li= msg
 
-  = f.input :title
-  = f.input :body
-  = f.button :submit
+  .form-inputs
+    = f.input :title
+    = f.input :body
+  .form-actions
+    = f.button :submit
