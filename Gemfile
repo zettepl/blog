@@ -13,6 +13,7 @@ gem 'jquery-rails'
 gem 'sass-rails', '~> 4.0.3'
 gem 'simple_form'
 gem 'sprockets'
+gem 'twitch'
 gem 'uglifier', '>= 1.3.0'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes

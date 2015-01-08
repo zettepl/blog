@@ -1,2 +1,5 @@
 %h2= link_to_unless_current post.title, post
+%p
+  Created at:
+  = post.created_at.to_formatted_s(:long)
 = simple_format post.body

@@ -44,8 +44,15 @@
           .col-xs-12.col-md-4
             .panel.panel-default
               .panel-heading
-                %h3.panel-title Lorem ipsum
+                %h3.panel-title Streamy
               .panel-body
-                Essa
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              %ul.list-group
+                - @streams['streams'].each do |stream|
+                  %li.list-group-item
+                    =link_to(stream['channel']['url']) do
+                      =stream['channel']['language']
+                      =stream['channel']['display_name']
+                      =stream['viewers']
             .well
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque erat vel mauris malesuada, viverra egestas turpis posuere. Vivamus interdum sem et lacinia rutrum. Donec vel tellus orci. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam quis sem ex. Nullam tincidunt varius dui id tincidunt. Vestibulum ut urna vel leo hendrerit viverra. Nulla sed metus mollis, sodales mi nec, efficitur arcu. Vivamus turpis dolor, auctor at libero sit amet, lobortis dignissim libero. Quisque et risus sit amet nunc euismod porttitor. Maecenas volutpat hendrerit neque non euismod. Nam eu malesuada urna. In hac habitasse platea dictumst.
