@@ -1,3 +1,12 @@
 class Post < ActiveRecord::Base
-	validates_presence_of :body, :title
+
+	# => ASSOCIATIONS
+
+	has_many :comments
+
+	# => VALIDATIONS
+
+	validates :body, presence: true
+	validates :title, presence: true
+
 end
